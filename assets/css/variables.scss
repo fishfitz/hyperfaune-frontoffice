@@ -1,0 +1,12 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+$primary: $env-primary;
+$info: #3B5998;
+$link: #df52c6;
+$speed: 150ms;
+$table-cell-border: 1px solid rgba($grey-lighter, .7);
+$grey-dark: #383d4f;
+$grey-darker: #383d4f;
+$link-hover: $primary;
+$warning: #8e44ad;

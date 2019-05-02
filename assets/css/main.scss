@@ -1,0 +1,85 @@
+@import "node_modules/bulmaswatch/pulse/_variables.scss";
+@import "~assets/css/variables.scss";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+@import "node_modules/bulmaswatch/pulse/_overrides.scss";
+
+@font-face {
+ font-family: "LemonMilk";
+ src: url("~assets/fonts/LemonMilk.otf");
+}
+
+@font-face {
+ font-family: "LemonMilk";
+ src: url("~assets/fonts/LemonMilkbold.otf");
+ font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: LemonMilk;
+}
+
+a, .button, li, .title {
+  transition: all .25s ease-out;
+}
+
+html, body {
+  font-size: 14px;
+  background-color: $white-ter;
+}
+
+.nuxt-progress {
+  top: 52px;
+  height: 2px;
+  background-color: $primary;
+}
+
+[loading] {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+  &:after {
+    @include loader;
+    position: absolute;
+    top: calc(50% - 2.5em);
+    left: calc(50% - 2.5em);
+    width: 5em;
+    height: 5em;
+    border-width: 0.25em;
+  }
+}
+
+.menu .menu-list a:hover {
+  background-color: transparent!important;
+}
+
+.menu .menu-list a.is-active {
+  background-color: transparent!important;
+  font-weight: bold;
+}
+
+.hidden {
+  visibility: hidden!important;
+}
+
+.readonly, .readonly a {
+  cursor: not-allowed!important;
+}
+
+.toast {
+  border-radius: 0!important;
+}
+
+.title {
+  small {
+    font-weight: normal;
+    font-size: 14pt;
+  }
+}
+
+:export {
+  primary: $primary;
+  greyLight: $grey-light;
+  greyDark: $grey-dark;
+  grey: $grey;
+}
